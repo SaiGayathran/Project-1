@@ -31,8 +31,8 @@ if page == "FPS Predictor":
     if(predict):
         cpucore = int(cpucore)
         cputhreads = int(cputhreads)
-        cputurboclk = int(cputurboclk)
-        gpubstclk = int(gpubstclk)
+        cputurboclk = float(cputurboclk)
+        gpubstclk = float(gpubstclk)
         gpumemo = int(gpumemo)
         gpushdun = int(gpushdun)
         x=np.array([cpucore,cputhreads,cputurboclk,gpubstclk,gpumemo,gpushdun,settings,cpucore**2,cputhreads**2,cputurboclk**2,gpubstclk**2,gpumemo**2,gpushdun**2,settings**2,cpucore*gpushdun,    gpumemo*gpushdun,cputurboclk*gpubstclk,gpubstclk*gpushdun,cpucore*gpubstclk])
